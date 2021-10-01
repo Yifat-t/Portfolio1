@@ -47,7 +47,7 @@ try {
 
     $mail->send();
     echo 'Message has been sent';
-    header('Location: /thank-you.html');
+    header('Location: https://yifat-tshuva.com/thank-you.html');
     exit();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}\n";
