@@ -1,12 +1,12 @@
 <?php
 if (isset($_POST['firstname']))
-    $name = $_POST['firstname'];
+    $firstname = $_POST['firstname'];
 if (isset($_POST['lastname']))
-    $name = $_POST['lastname'];
+    $lastname = $_POST['lastname'];
 if (isset($_POST['email']))
     $email = $_POST['email'];
 if (isset($_POST['PhoneNumer']))
-    $email = $_POST['PhoneNumer'];
+    $phoneNumber = $_POST['PhoneNumer'];
 if (isset($_POST['message']))
     $message = $_POST['message'];
 
@@ -48,7 +48,7 @@ try {
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}\n";
 }
 
 // $content = "From: $firstname \n Email: $email \n Message: $message";
