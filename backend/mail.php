@@ -42,11 +42,13 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'New Contact Form Submission';
-    $mail->Body    = 'From: $firstname \n Email: $email \n Message: $message';
+    $mail->Body    = 'From: ' . $firstname . '\n Email: ' . $email . '\n Message: ' . $message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
     echo 'Message has been sent';
+    header('Location: thank-you.html');
+    exit();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}\n";
 }
@@ -55,4 +57,3 @@ try {
 // $recipient = "yifat.tshuva@gmail.com";
 // $mailheader = "From: $email \r\n";
 // mail($recipient, $subject, $content, $mailheader) or die("Error!");
-echo "Email sent!";
