@@ -41,8 +41,8 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Subject = 'New Contact Form Submission';
+    $mail->Body    = 'From: $firstname \n Email: $email \n Message: $message';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
