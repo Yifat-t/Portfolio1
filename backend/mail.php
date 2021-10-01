@@ -32,7 +32,7 @@ try {
     $mail->Port       = 25;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom($email, 'Mailer');
+    $mail->setFrom("yifat.tshuva@gmail.com", 'Mailer');
     $mail->addAddress('yifat.tshuva+portfolio@gmail.com', 'From Portfolio');     //Add a recipient
     // $mail->addAddress('ellen@example.com');               //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
