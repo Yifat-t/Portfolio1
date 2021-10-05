@@ -5,10 +5,14 @@ html {
 *, *::before, *::after {
     box-sizing:inherit;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .page-container{
-    max-width:1200px;
-    margin:0 auto;
+    max-width: 1200px;
+    margin: 0;
 }
 .hidden {
     position:absolute;
@@ -16,16 +20,21 @@ html {
     width:1px;
     height:1px;
   }
+.side-menu{
+  color:#cbb26b;
+}
 .logo{
   cursor: pointer;
   position: relative;
   padding: 10px 20px;
   background: white;
-  font-size: 28px;
+  font-size: 42px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   transition: all 1s;
   font-weight: bolder;
+  margin-bottom: 1em;
+  color:#cbb26b;
 }
 .logo:after, .logo:before {
     content: " ";
@@ -63,60 +72,32 @@ html {
   }
 body{
     font-family: 'Dosis', sans-serif;
-    /*background-image: url(../images/dave-hoefler-yYABaqHw9WQ-unsplash.jpg);*/
     color:#cbb26b;
     background-color: #2a9d8f;
 }
-aside{
-    background-color: rgba(0, 0, 10, 0.5);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 20%;
-    position:fixed;
-    display: inline-block;
-    text-align: center;
-    padding-top: 2rem;
+.socialmedia a{
+  margin-right:30px;
 }
-#main{
-    /*position:relative;*/
-    padding-left: 16rem;
-    padding-top: 3rem;
-    font-size: 36px;
+.socialmedia a:hover{
+  color:#cbb26b;
+  text-shadow: 0 0 5px #cbb26b;
+
 }
-aside li{
-    list-style-type: none;
-    font-size: 24px;
-    border-bottom: black 0.5px solid ;
-    border-top: black 0.5px solid ;
-}
-aside li:nth-child(2){
-    border-top:none;
-}
-aside li:nth-child(3){
-    border-top:none;
-}
-ul{
-    padding-left: 0px;
-}
+
 a{
     text-decoration:none;
     color:#cbb26b;
 }
-ul li a {
+.menuItem a{
     position: relative; 
     display: block;
     text-align: center;
     line-height: 63px;
-    background: #333;
     font-size: 30px;
-    /*color: #666;*/
     transition: .5s;
+    color:#cbb26b;
   }
-  .SocialNetworks :nth-child(1) , .SocialNetworks :nth-child(2){
-      margin-right: 10px;
-  }
-  ul li a::before {
+  .menuItem a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -128,55 +109,17 @@ ul li a {
     transform: scale(.9);
     z-index: -1;
   }
-  
-  ul li a:hover::before {
+
+  .menuItem a:hover::before {
     transform: scale(1);
     box-shadow: 0 0 15px #cbb26b;
+
   }
-  
-  ul li a:hover {
+  .menuItem a:hover {
     color: #cbb26b;
-    box-shadow: 0 0 5px #cbb26b;
     text-shadow: 0 0 5px #cbb26b;
   }
-aside h3{
-    font-size: 24px;
-}
-.icon{
-    width: 1em;
-}
-.icon2{
-    width: 1.2em;
-}
-.icon3{
-    width: 2.2em;
-}
-#FormButton{
-    border:#cbb26b solid 1px;
-    display: inline-block;
-    padding: 10px 25px 10px 25px;
-    font-size: 14px;
-    box-shadow: 1px 1px 2px rgb(0 0 0 / 47%);
-    font-weight: bold;
-    border-radius: 4px;   
-}
-.FormButton {
-    color: #fff !important;
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #60a3bc;
-    padding: 20px;
-    border-radius: 50px;
-    display: inline-block;
-    border: none;
-    transition: all 0.4s ease 0s;
-    }
-    .FormButton:hover {
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    transition: all 0.4s ease 0s;
-    }
+
 button{
     border:#cbb26b solid 1px;
     display: inline-block;
@@ -187,6 +130,8 @@ button{
     border-radius: 4px;
     transition: all 0.5s;
     cursor: pointer;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 button a {
     cursor: pointer;
@@ -210,27 +155,22 @@ button a {
     right: 0;
   }
 main h1, h2{
-    text-shadow: 3px 3px black ;
+    text-shadow: 2px 2px black ;
 }
-#mydetails{
-    width:47%;
-    display: inline-block;
-}
-#inputs{
-    width:47%;
-    display: inline-block;
+h1{
+  font-size: 52px;
+  font-weight: bolder;
 }
 .threeholder {
     position: relative;
-    margin-top: 0px;
-    width: 800px;
     height:280px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1.5em;
   }
   .threeone {
     display: inline-block;
-    width: 32%;
+    width: 100%;
     height: 100%;
     background: #363636;
     border-bottom: 15px solid #cbb26b;
@@ -239,7 +179,7 @@ main h1, h2{
   }
   .threetwo {
     display: inline-block;
-    width: 32%;
+    width: 100%;
     height: 100%;
     background: #333333;
     border-bottom: 15px solid #cbb26b;
@@ -247,7 +187,7 @@ main h1, h2{
   }
   .threethree {
     display: inline-block;
-    width: 32%;
+    width: 100%;
     height: 100%;
     background: #363636;
     border-bottom: 15px solid #cbb26b;
@@ -262,7 +202,7 @@ main h1, h2{
   .threeone:hover .circleborder{
       background: #333333;
   }
-  .threeone:hover svg{
+  .threeone:hover img{
     fill:#cbb26b;
   }
   .threeholder h4 {
@@ -279,8 +219,8 @@ main h1, h2{
     display: inline-block;
     width:200px;
     text-align: center;
-    margin-left: -55px;
-    margin-top: 20px;
+    margin-left: -60px;
+    margin-top: 35px;
     font-size: 12px;
     color:#8a8a8a;
     letter-spacing: 1px;
@@ -294,7 +234,7 @@ main h1, h2{
   .threethree:hover h4 {
     color: black;
   }
-  .threeone:hover svg, .threetwo:hover svg, .threethree:hover svg {
+  .threeone:hover img, .threetwo:hover img, .threethree:hover img {
     transition: all 0.65s;
     transform: rotateY(360deg);
   }
@@ -304,7 +244,7 @@ main h1, h2{
   .threetwo:hover .circleborder{
       background: #333333;
   }
-  .threetwo:hover svg{
+  .threetwo:hover img{
     fill:#cbb26b;
   }
   .threethree:hover {
@@ -313,33 +253,24 @@ main h1, h2{
   .threethree:hover .circleborder{
       background: #333333;
   }
-  .threethree:hover svg{
+  .threethree:hover img{
     fill:#cbb26b;
   }
   .circleborder {
-    position: absolute;
-    top: 30px;
-    width: 90px;
-    height: 90px;
+    /*position: absolute;*/
+    /*top: 30px;*/
+    /*left: 35%;*/
+    width: 100px;
+    height: 100px;
     background: #cbb26b;
-    margin-left: 88.33333px;
+    /*margin-left: 88.33333px;*/
+    margin: 0 auto;
     border-radius: 50%;
+    position:relative;
+    top: 20px;
+    border: 10px solid #5c5c5c;
   }
-  .circlepic {
-    position:absolute;
-    top:-10px;
-    margin-top: 30px;
-    width: 110px;
-    height: 110px;
-    background: #5c5c5c;
-    margin-left: 78.33333px;
-    border-radius: 50%;
-  }
-main li{
-    list-style: none;
-    font-weight: 800;
-    font-size: 24px;
-} 
+  
 .perspective-text {
     color: white;
     font-family: Arial;
@@ -353,7 +284,7 @@ main li{
     overflow: hidden;
     position: relative;
   }
-  p {
+  .perspective-text p {
     margin: 0;
     height: 50px;
     line-height: 50px;
@@ -363,8 +294,6 @@ main li{
       font-weight: bold;
      
   }
-
-
   .perspective-text:hover p {
     transform: translate(0, -50px);
   }
@@ -391,6 +320,10 @@ main li{
   .perspective-line:nth-child(5) {
     left: 145px;
   }
-  footer{
-      font-weight: bolder;
-  }
+
+ #contact{
+  margin-top: 2em;
+ }
+ 
+
+ 

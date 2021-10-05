@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="css/mdb.css">-->
+    <title>Web Developer - Yifat Tshuva</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+
+
+<body class="page-container">
+    <div>
+        <aside>
+            <div class="logo-container">
+                <span class="logo">YT</span>
+            </div>
+            <h3>YIFAT TSHUVA</h3>
+            <p>FULL-STACK WEB DEVELOPER</p>
+            <nav>
+                <h3 class="hidden">Main navigation</h3>
+
+                <ul class="menu">
+                    <li class="menuItem"><a href="#projects">Projects</a></li>
+                    <li class="menuItem"><a href="#about">About</a></li>
+                    <li class="menuItem"><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger">
+                    <!-- material icons https://material.io/resources/icons/ -->
+                    <i class="menuIcon material-icons">menu</i>
+                    <i class="closeIcon material-icons">close</i>
+                </button>
+            </nav>
+            <div class="SocialNetworks">
+                <a href="http://www.linkedin.com/in/yifat-tshuva"><img class="icon" src="images/linkedin.svg"></a>
+                <a href="https://github.com/Yifat-t"><img class="icon2" src="images/iconmonstr-github-1.svg"></a>
+                <a href="mailto:yifat.tshuva@gmail.com"><img class="icon2" src="images/icons8-gmail.svg"></a>
+            </div>
+            <div>
+                <img class="icon3" src="images/location_icon_176656.svg">
+                <p>Toronto, ON, Canada</p>
+            </div>
+        </aside>
+    </div>
+
+    <main>
+        <div class="perspective-text">
+            <div class="perspective-line">
+                <p></p>
+                <p>Welcome</p>
+            </div>
+            <div class="perspective-line">
+                <p>Welcome</p>
+                <p>to</p>
+            </div>
+            <div class="perspective-line">
+                <p>to</p>
+                <p>my</p>
+            </div>
+            <div class="perspective-line">
+                <p>my</p>
+                <p>website</p>
+            </div>
+            <div class="perspective-line">
+                <p>website</p>
+                <p></p>
+            </div>
+        </div>
+        <div>
+            <h1>Hi,<br>
+                I'm Yifat,<br>
+                web developer</h1>
+            <button><a href="#contact">Contact Me</a></button>
+        </div>
+
+        <div id="projects">
+            <h2>My Portfolio</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="threeholder">
+                            <div class="threeone">
+                                <div class="circlepic">
+                                </div>
+                                <div class="circleborder">
+                                    <p>View Project</p>
+                                    <h4>Project 1</h4>
+                                    <p>Memory Game!</p>
+                                </div>
+                            </div>
+                            <div class="threetwo">
+                                <a href="https://mypizzacalculator.netlify.app/">
+
+                                    <div class="circlepic">
+
+                                    </div>
+                                    <div class="circleborder">
+                                        <p>View Project</p>
+                                </a>
+
+                                <h4>Project 2</h4>
+                                <p>Pizza calculator</p>
+                            </div>
+
+                        </div>
+                        <div class="threethree">
+                            <div class="circlepic">
+                            </div>
+                            <div class="circleborder">
+
+                                <p>View Project</p>
+                                <h4>Project 3</h4>
+                                <p>Virtual electronic store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="about">
+            <h2>About me</h2>
+            <div>
+                <p>Toronto-based web developer who have passion
+                    for building and designing websites, both front-end and
+                    back-end.</p>
+                <p>I'm well-organised person, problem solver, independent
+                    employee with high attention to detail. I'm planning and building processes to copmletion
+                    and
+                    assure clients satisfactions.</p>
+            </div>
+        </div>
+        <div id="contact">
+            <form class="row g-3 needs-validation" novalidate class="row g-3 needs-validation" novalidate
+                id="contact-form" name="contact-form"
+                action="https://portfolio-php-backend.herokuapp.com/backend/mail.php" method="POST">
+                <legend>Contact me</legend>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" name="firstname" id="validationCustom01" placeholder="John"
+                        required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" name="lastname" id="validationCustom02" placeholder="Doe"
+                        required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                        placeholder="example@domain.com" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-12">
+                    <label for="validationTextarea" class="form-label">Textarea</label>
+                    <textarea class="form-control" name="message" id="validationTextarea"
+                        placeholder="Write your message here" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+        </div>
+        </fieldset>
+        </form>
+
+
+        </div>
+    </main>
+
+    <footer>
+        © 2021 Yifat Tshuva. All rights reserved.
+    </footer>
+</body>
+
+
+</html>

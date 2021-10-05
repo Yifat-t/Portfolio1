@@ -3,178 +3,258 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/mdb.css">
+    <!--<link rel="stylesheet" href="css/mdb.css">-->
     <title>Web Developer - Yifat Tshuva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
 </head>
 
-<body class="page-container">
-    <aside>
-        <div class="logo-container">
-            <span class="logo">YT</span>
-        </div>
-        <h3>YIFAT TSHUVA</h3>
-        <p>FULL-STACK WEB DEVELOPER</p>
-        <nav>
-            <h3 class="hidden">Main navigation</h3>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="SocialNetworks">
-            <a href="http://www.linkedin.com/in/yifat-tshuva"><img class="icon" src="images/linkedin.svg"></a>
-            <a href="https://www.facebook.com/yifat.tshuva.7"><img class="icon2" src="images/facebook.svg"></a>
-            <a href="https://github.com/Yifat-t"><img class="icon2" src="images/iconmonstr-github-1.svg"></a>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <div class="logo-container">
+                        <span class="logo">YT</span>
+                    </div>
 
-        </div>
+                    <div
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none justify-content-center">
+                        <span class="fs-5 d-none d-sm-inline side-menu">YIFAT TSHUVA</span>
+                    </div>
 
-    </aside>
-    <div id="main">
-        <main>
-            <div class="perspective-text">
-                <div class="perspective-line">
-                    <p></p>
-                    <p>Welcome</p>
+                    <nav>
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li class="menuItem">
+                                <a href="#projects" class="nav-link align-middle px-0">
+                                    <i class="fs-4 fa fa-home side-menu"></i> <span
+                                        class="ms-1 d-none d-sm-inline ">Projects</span>
+                                </a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="#about" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 fa fa-dashboard side-menu"></i>
+                                    <span class="ms-1 d-none d-sm-inline">About</span>
+                                </a>
+                            </li>
+                            <li class="menuItem mb-4">
+                                <a href="#contact" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 fa fa-phone side-menu"></i>
+                                    <span class="ms-1 d-none d-sm-inline">Contact</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="nav-link px-0 align-middle mb-5">
+                                    <span class="ms-1 d-none d-sm-inline socialmedia">
+                                        <a href="http://www.linkedin.com/in/yifat-tshuva"><i
+                                                class="fa fa-linkedin"></i></a>
+                                        <a href="https://github.com/Yifat-t"><i class="fa fa-github"></i></a>
+                                        <a href="mailto:yifat.tshuva@gmail.com"><i class="fa fa-envelope"></i></a>
+                                    </span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="nav-link px-0 align-middle">
+                                    <span class="ms-1 d-none d-sm-inline">
+                                        <i class="fa fa-map-marker side-menu"></i>
+                                        <p class="side-menu">Toronto, ON, Canada</p>
+                                    </span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </nav>
+
                 </div>
-                <div class="perspective-line">
-                    <p>Welcome</p>
-                    <p>to</p>
-                </div>
-                <div class="perspective-line">
-                    <p>to</p>
-                    <p>my</p>
-                </div>
-                <div class="perspective-line">
-                    <p>my</p>
-                    <p>website</p>
-                </div>
-                <div class="perspective-line">
-                    <p>website</p>
-                    <p></p>
-                </div>
+
             </div>
-            <h1>Hi,<br>
-                I'm Yifat,<br>
-                web developer</h1>
-            <button><a href="#contact">Contact Me</a></button>
-            <div id="projects">
-                <h2>My Portfolio</h2>
+            <div class="col">
                 <div class="container">
-                    <div class="threeholder">
-                        <div class="threeone">
-                            <div class="circlepic">
+                    <div class="row">
+
+                        <div class="col-md-10 col-md-3 perspective-text">
+                            <div class="perspective-line">
+                                <p></p>
+                                <p>Welcome</p>
                             </div>
-                            <div class="circleborder">
-                                <p>View Project</p>
-                                <h4>Project 1</h4>
-                                <p>Memory Game!</p>
+                            <div class="perspective-line">
+                                <p>Welcome</p>
+                                <p>to</p>
+                            </div>
+                            <div class="perspective-line">
+                                <p>to</p>
+                                <p>my</p>
+                            </div>
+                            <div class="perspective-line">
+                                <p>my</p>
+                                <p>website</p>
+                            </div>
+                            <div class="perspective-line">
+                                <p>website</p>
+                                <p></p>
                             </div>
                         </div>
-                        <div class="threetwo">
-                            <div class="circlepic">
-
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1>Hi,<br>
+                                I'm Yifat,<br>
+                                Full-stack web developer and designer</h1>
+                            <button><a href="#contact">Contact Me</a></button>
+                        </div>
+                    </div>
+                    <h2 id="projects">My Portfolio</h2>
+                    <div class="row slider">
+                        <div class="col-md-12">
+                            <div class="threeholder">
+                                <div class="threeone">
+                                    <a href="https://github.com/Yifat-t/Passion.Project">
+                                        <div class="circleborder">
+                                            <p>View Project</p>
+                                    </a>
+                                    <h4>Project 1</h4>
+                                    <p>Electronic reviews website</p>
+                                </div>
                             </div>
-                            <div class="circleborder">
-                                <a href="https://mypizzacalculator.netlify.app/" target="_blank">
-                                    <p>View Project</p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="threeholder justify-content-center">
+                            <div class="threetwo">
+                                <a href="https://mypizzacalculator.netlify.app/">
+                                    <div class="circleborder">
+                                        <p>View Project</p>
                                 </a>
                                 <h4>Project 2</h4>
                                 <p>Pizza calculator</p>
                             </div>
-
-                        </div>
-                        <div class="threethree">
-                            <div class="circlepic">
-                            </div>
-                            <div class="circleborder">
-
-                                <p>View Project</p>
-                                <h4>Project 3</h4>
-                                <p>Virtual electronic store</p>
-                            </div>
-
-
                         </div>
                     </div>
                 </div>
-                <div id="about">
-                    <h2>About me</h2>
-                    <h4>Toronto-based web developer who have passion
-                        for building and designing websites, both front-end and
-                        back-end.</h4>
-                    <h4>I'm well-organised person, problem solver, independent
-                        employee with high attention to detail. I'm planning and building processes to copmletion and
-                        assure clients satisfactions.</h4>
+                <div class="col-md-12">
+                    <div class="threeholder">
+                        <div class="threethree">
+                            <a href="https://weblancers.herokuapp.com/home.php">
+
+                                <div class="circleborder">
+                                    <!--<<img src="images/weblancers.png">-->
+                                    <p>View Project</p>
+                            </a>
+                            <h4>Project 3</h4>
+                            <p>Weblancers project</p>
+                        </div>
+                    </div>
                 </div>
-                <div id="contact">
 
-                    <form id="contact-form" name="contact-form"
-                        action="https://portfolio-php-backend.herokuapp.com/backend/mail.php" method="POST">
-                        <h2>Contact me</h2>
-                        <p>Let’s get to work! Submit your contact information to discuss
-                            your next business idea.</p>
-                        <br>
-                        <fieldset id="contact" class="flex-container">
-                            <div id="inputs">
-                                <div>
-                                    <label for="firstname">First Name:</label>
-                                    <input type="text" id="firstname" name="firstname">
-                                </div>
-                                <div>
-                                    <label for="lastname">Last Name:</label>
-                                    <input type="text" id="lastname" name="lastname">
-                                </div>
-                                <div>
-                                    <label for="email">Your E-mail:</label>
-                                    <input type="email" id="email" name="email">
-                                </div>
-                                <div>
-                                    <label for="PhoneNumer">Phone:</label>
-                                    <input type="tel" id="PhoneNumer" name="PhoneNumer">
-                                </div>
-                                <div class="row">
-                                    <label class="required" for="message">Your message:</label><br />
-                                    <textarea id="message" class="input" name="message" rows="7"
-                                        cols="30"></textarea><br />
-                                    <span id="message_validation" class="error_message"></span>
-                                </div>
-                                <div>
-                                    <input class="FormButton" type="submit" value="Send Contact Details" />
+            </div>
+        </div>
+        <h2 id="about">About me</h2>
+        <div class="row">
+            <div class="col-12 fs-4">
+                <p>Toronto-based web developer and designer who have passion
+                    for building and designing websites, both front-end and
+                    back-end.</p>
+                <p>I'm well-organised person, problem solver, independent
+                    employee with high attention to detail. I'm planning and building processes to copmletion
+                    and
+                    assure clients satisfactions.</p>
+            </div>
+        </div>
+        <h2 id="contact">Contact Me</h2>
+        <div class="row">
+            <form novalidate class="needs-validation" novalidate id="contact-form" name="contact-form"
+                action="https://portfolio-php-backend.herokuapp.com/backend/mail.php" method="POST">
 
-                                </div>
-                            </div>
-
-                            <div id="mydetails">
-                                <ul>
-                                    <li><img class="icon3" src="images/location_icon_176656.svg">
-                                        <p>Toronto, ON, Canada</p>
-                                    </li>
-
-                                    <li>
-                                        <a href="mailto:yifat.tshuva@gmail.com">
-                                            <img class="icon2" src="images/icons8-gmail.svg">
-                                            <p>yifat.tshuva@gmail.com</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </fieldset>
-
-                    </form>
-
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" name="firstname" id="validationCustom01" placeholder="John"
+                        required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
                 </div>
-        </main>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" name="lastname" id="validationCustom02" placeholder="Doe"
+                        required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                        placeholder="example@domain.com" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-12">
+                    <label for="validationTextarea" class="form-label">Textarea</label>
+                    <textarea class="form-control" name="message" id="validationTextarea"
+                        placeholder="Write your message here" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <footer>
-        © 2021 Yifat Tshuva. All rights reserved.
-    </footer>
-</body>
 
+    </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 680,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+
+</body>
 
 </html>
