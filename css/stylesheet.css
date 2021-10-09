@@ -120,7 +120,7 @@ a{
     text-shadow: 0 0 5px #cbb26b;
   }
 
-button{
+.button{
     border:#cbb26b solid 1px;
     display: inline-block;
     padding: 10px 25px 10px 25px;
@@ -133,13 +133,13 @@ button{
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
-button a {
+.button a {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
-  button a:after {
+  .button a:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -147,10 +147,10 @@ button a {
     right: -20px;
     transition: 0.5s;
   }
-  button:hover a {
+  .button:hover a {
     padding-right: 25px;
   }
-  button:hover a:after {
+  .button:hover a:after {
     opacity: 1;
     right: 0;
   }
@@ -168,7 +168,7 @@ h1{
     margin-right: auto;
     margin-bottom: 1.5em;
   }
-  .threeone {
+  .threeone{
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -185,16 +185,10 @@ h1{
     border-bottom: 15px solid #cbb26b;
     transition: all 0.25s;
   }
-  .threethree {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: #363636;
-    border-bottom: 15px solid #cbb26b;
-    transition: all 0.25s;
-  }
+ 
   .threeone:hover {
     background: #cbb26b;
+    color:black;
   }
   .threeone:hover .circlepic {
     background: #5c5c5c;
@@ -215,14 +209,14 @@ h1{
     text-align: center;
     color: white;
   }
-  .threeholder p {
+  .threeholder a {
     display: inline-block;
     width:200px;
     text-align: center;
     margin-left: -60px;
     margin-top: 35px;
     font-size: 12px;
-    color:#8a8a8a;
+    color:white;
     letter-spacing: 1px;
   }
   .threeone:hover h4 {
@@ -231,15 +225,14 @@ h1{
   .threetwo:hover h4 {
     color: black;
   }
-  .threethree:hover h4 {
-    color: black;
-  }
-  .threeone:hover img, .threetwo:hover img, .threethree:hover img {
+  
+  .threeone:hover img, .threetwo:hover img{
     transition: all 0.65s;
     transform: rotateY(360deg);
   }
   .threetwo:hover {
     background: #cbb26b;
+    color: black;
   }
   .threetwo:hover .circleborder{
       background: #333333;
@@ -247,15 +240,7 @@ h1{
   .threetwo:hover img{
     fill:#cbb26b;
   }
-  .threethree:hover {
-    background: #cbb26b;
-  }
-  .threethree:hover .circleborder{
-      background: #333333;
-  }
-  .threethree:hover img{
-    fill:#cbb26b;
-  }
+  
   .circleborder {
     /*position: absolute;*/
     /*top: 30px;*/
@@ -270,7 +255,10 @@ h1{
     top: 20px;
     border: 10px solid #5c5c5c;
   }
-  
+  .circleborder a{
+    font-weight: bold;
+   
+}
 .perspective-text {
     color: white;
     font-family: Arial;
@@ -290,10 +278,7 @@ h1{
     line-height: 50px;
     transition: all 0.5s ease-in-out;
   }
-  .circleborder p{
-      font-weight: bold;
-     
-  }
+  
   .perspective-text:hover p {
     transform: translate(0, -50px);
   }
