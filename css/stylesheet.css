@@ -49,7 +49,9 @@ body{
 .socialmedia a{
   margin-right:30px;
 }
-
+.socialmedia a:hover{
+  border-bottom: white solid 2px;
+}
 
 a{
     text-decoration:none;
