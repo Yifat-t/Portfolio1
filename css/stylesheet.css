@@ -10,6 +10,10 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Dosis', sans-serif;
+  color: rgb(114, 108, 108);
+}
 .page-container{
     max-width: 1200px;
     margin: 0;
@@ -20,8 +24,8 @@ html {
     width:1px;
     height:1px;
   }
-.side-menu{
-  color:#cbb26b;
+  .menu a, .menu i, .menu p {
+  color:white;
 }
 .logo{
   cursor: pointer;
@@ -34,59 +38,21 @@ html {
   transition: all 1s;
   font-weight: bolder;
   margin-bottom: 1em;
-  color:#cbb26b;
-}
-.logo:after, .logo:before {
-    content: " ";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border: 0px solid #fff;
-    transition: all 1s;
-  }
-  .logo:after {
-    top: -1px;
-    left: -1px;
-    border-top: 5px solid black;
-    border-left: 5px solid black;
-  }
-  .logo:before {
-    bottom: -1px;
-    right: -1px;
-    border-bottom: 5px solid black;
-    border-right: 5px solid black;
-  }
-  .logo:hover {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-  .logo:hover:before, .logo:hover:after {
-    width: 100%;
-    height: 100%;
-  }
-  
+  color:rgb(114, 108, 108);
+  border-radius: 50%;
+}  
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-body{
-    font-family: 'Dosis', sans-serif;
-    color:#cbb26b;
-    background-color: #2a9d8f;
-}
 .socialmedia a{
   margin-right:30px;
 }
-.socialmedia a:hover{
-  color:#cbb26b;
-  text-shadow: 0 0 5px #cbb26b;
 
-}
 
 a{
     text-decoration:none;
-    color:#cbb26b;
 }
 .menuItem a{
     position: relative; 
@@ -95,7 +61,6 @@ a{
     line-height: 63px;
     font-size: 30px;
     transition: .5s;
-    color:#cbb26b;
   }
   .menuItem a::before {
     content: '';
@@ -104,7 +69,6 @@ a{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #cbb26b;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -112,16 +76,15 @@ a{
 
   .menuItem a:hover::before {
     transform: scale(1);
-    box-shadow: 0 0 15px #cbb26b;
+    box-shadow: 0 0 15px;
 
   }
   .menuItem a:hover {
-    color: #cbb26b;
-    text-shadow: 0 0 5px #cbb26b;
+    text-shadow: 0 0 5px;
   }
 
 .button{
-    border:#cbb26b solid 1px;
+    border:rgb(114, 108, 108) solid 1px;
     display: inline-block;
     padding: 10px 25px 10px 25px;
     font-size: 24px;
@@ -138,6 +101,7 @@ a{
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    color: rgb(114, 108, 108);
   }
   .button a:after {
     content: '\00bb';
@@ -155,7 +119,9 @@ a{
     right: 0;
   }
 main h1, h2{
-    text-shadow: 2px 2px black ;
+    font-weight: 600 ;
+    margin-top: 20px;
+    
 }
 h1{
   font-size: 52px;
@@ -196,13 +162,12 @@ h1{
   .threeone:hover .circleborder{
       background: #333333;
   }
-  .threeone:hover img{
-    fill:#cbb26b;
+  .threeholder p{
+    color: white;
   }
   .threeholder h4 {
     width: 200px;
     text-align: center;
-    font-size: 13px;
     margin-left: -55px;
     font-weight: bold;
     margin-top: 45px;
@@ -260,7 +225,7 @@ h1{
    
 }
 .perspective-text {
-    color: white;
+    color: rgb(114, 108, 108);
     font-family: Arial;
     font-size: 58px;
     font-weight: 900;
@@ -306,9 +271,9 @@ h1{
     left: 145px;
   }
 
- #contact{
-  margin-top: 2em;
- }
+   form >*{
+    font-weight: 600;
+   }
  
 
  
